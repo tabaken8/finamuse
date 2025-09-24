@@ -1,7 +1,8 @@
+// app/layout.tsx
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { LayoutDashboard, Info, Settings } from "lucide-react"
+import { LayoutDashboard, Info, Settings, Activity } from "lucide-react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,8 +24,7 @@ export default function RootLayout({
         {/* Sidebar */}
         <aside className="w-70 border-r bg-white/70 backdrop-blur-sm sticky top-0 h-screen flex flex-col p-8">
           <h1 className="text-xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Finamuse 
-          
+            Finamuse
           </h1>
           
           <nav className="flex flex-col space-y-4 text-gray-700 text-sm">
@@ -34,6 +34,15 @@ export default function RootLayout({
             >
               <LayoutDashboard size={18} />
               ダッシュボード
+            </a>
+            <a
+              href="/diagnosis"
+              className="flex items-center gap-3 p-2 rounded-md hover:bg-blue-50 hover:text-blue-600"
+              id="diagnosis"            // ← ref=diagnosis 相当で識別できるように
+              data-ref="diagnosis"      // ← 必要ならこちらを参照
+            >
+              <Activity size={18} />
+              診断
             </a>
             <a
               href="/about"

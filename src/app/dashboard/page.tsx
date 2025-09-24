@@ -444,7 +444,7 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-purple-50 py-8">
       <div className="mx-auto max-w-6xl rounded-3xl bg-white shadow-xl p-6">
         <div className="mb-4">
-          <h1 className="text-2xl font-extrabold tracking-tight">投資シミュレーション</h1>
+          <h1 className="text-2xl font-extrabold tracking-tight">資産運用シミュレーション</h1>
         </div>
 
         {/* コントロール群 */}
@@ -614,7 +614,7 @@ export default function DashboardPage() {
                       isAnimationActive={false}
                     >
                       <LabelList
-                        content={makeEndLabel(chartData.length, "合計", "#8b5cf6")}
+                        content={makeEndLabel(chartData.length, "ポートフォリオ", "#8b5cf6")}
                         dataKey="total"
                       />
                     </Line>
