@@ -581,7 +581,7 @@ export default function DashboardPage() {
                       type="monotone"
                       dataKey="aum"
                       stroke="#8b5cf6"
-                      strokeWidth={5}
+                      strokeWidth={3}
                       dot={false}
                       name="AUM"
                       isAnimationActive={false}
@@ -608,7 +608,7 @@ export default function DashboardPage() {
                       type="monotone"
                       dataKey="total"
                       stroke="#8b5cf6"
-                      strokeWidth={5}
+                      strokeWidth={3}
                       dot={false}
                       name="合計"
                       isAnimationActive={false}
